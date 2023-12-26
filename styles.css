@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----- header -----*/
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/desktop/image-hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 10%;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.hero {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    border: 3px solid white;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 1.5rem;
+}
+
+.hero p {
+    font-size: 5rem;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+
+@media (max-width: 700px) {
+    .header {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/mobile/image-hero.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    nav {
+        padding: 40px 20px;
+    }
+    
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav img {
+        width: 150px;
+    }
+
+    .hero {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+    }
+    
+    .hero-content {
+        max-width: 550px;
+        padding: 1.5rem;
+    }
+    
+    .hero p {
+        font-size: 2.5rem;
+        padding-right: 10px;
+        text-transform: uppercase;
+    }
+
+    nav .fa-solid {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+/*----- main -----*/
+@media (max-width: 700px) {
+    .main-container {
+        background: url(images/mobile/image-interactive.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 90%;
+        height: 40vh;
+        object-fit: cover;
+        margin: auto;
+        padding-top: 100px;
+        
+    }
+}
